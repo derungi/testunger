@@ -1,0 +1,35 @@
+git init                                   adds the current directory to the git working directory
+git status                              shows status of the working directory
+git commit -m “message”     commits the files of the staging directory to the repository
+git log                                   shows recent changes 
+git diff        [filename]                           shows changes of files in the working directory
+git diff —staged                    shows changed made to files in the staging directory
+git rm [filename]                    deletes file from the repository, then have to be committed too
+
+git mv oldfilename newfilename     renaming of files
+
+
+Standard procedure:
+git add <file-name>                adds files to the working directory
+git add .                                  adds all files in the current dir to the working directory
+git commit -am “message”     adds AND commits the files to the repository in ONE step          
+git push                                     transfers all changes (of earlier commits) to the default remote repository (eg github) 
+
+REPOSITORY
+STAGING DIRECTORY
+WORKING DIRECTORY
+
+git config —global user.name “username”
+git config —global user.email “email"
+
+git remote origin master          set up a default remote origin master to enable “push"
+
+git clone [url]                         gets all the content of the repository (and creates it on the local computer)
+
+git diff HEAD^ [filename]       show changes since the last commit
+
+REMOTES
+git remote add  <name> <url>    add a remote repository
+git remote rm <name>                remove a
+git remote -v                                show all existing remote repositories including url
+
